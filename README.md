@@ -1,7 +1,8 @@
 # DirectoryHelper
 
-#### Creates a directory along with a specified number of sub-directories like below:
+#### Creates a directory along with a specified number of sub-directories
 
+example:<br />
 Main<br />
    |<br />
    |-- 01<br />
