@@ -23,35 +23,37 @@ int main()
 	{
 		std::cout << "\n\nFailed to create main directory.\n";
 	}
-
-	fs::current_path(dirName);
-
-	bool test = false;
-	for (int i = 1; i <= subDirs; i++)
+	else
 	{
-		if (i < 10)
+		fs::current_path(dirName);
+
+		bool test = false;
+		for (int i = 1; i <= subDirs; i++)
 		{
-			if (!fs::create_directory("0" + std::to_string(i)))
+			if (i < 10)
 			{
-				test = true;
-			}	
+				if (!fs::create_directory("0" + std::to_string(i)))
+				{
+					test = true;
+				}
+			}
+			else
+			{
+				if (!fs::create_directory(std::to_string(i)))
+				{
+					test = true;
+				}
+			}
+		}
+
+		if (test)
+		{
+			std::cout << "Failed to create sub-directories.\n";
 		}
 		else
 		{
-			if (!fs::create_directory(std::to_string(i)))
-			{
-				test = true;
-			}	
+			std::cout << "\nProcess completed successfully.\n";
 		}
-	}
-
-	if (test)
-	{
-		std::cout << "Failed to create sub-directories.\n";
-	}
-	else
-	{
-		std::cout << "\nProcess completed successfully.\n";
 	}
 
 	std::cout << "Press enter to exit...";
