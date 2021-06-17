@@ -1,6 +1,6 @@
 # DirectoryHelper
 
-#### Creates a directory along with a specified number of sub-directories
+#### Creates a new directory along with a specified number of sub-directories
 
 ##### Example:
 
