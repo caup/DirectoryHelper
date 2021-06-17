@@ -2,7 +2,7 @@
 
 #### Creates a new directory along with a specified number of sub-directories
 
-##### Example:
+##### `Example:`
 
 >working dir<br />
   └── new dir<br />
