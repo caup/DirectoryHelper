@@ -2,10 +2,11 @@
 
 #### Creates a directory along with a specified number of sub-directories
 
-example:
+##### Example:
 
-working<br />
-directory  
-└── new directory<br />
-         ├── sub-directories
-
+>working dir<br />
+  └── new directory<br />
+      ├── 01<br />
+      ├── 02   *sub-directories*<br />
+      ├── 03<br />
+      
