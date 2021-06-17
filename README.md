@@ -5,7 +5,7 @@
 ##### Example:
 
 >working dir<br />
-  └── new directory<br />
+  └── new dir<br />
       ├── 01<br />
       ├── 02   *sub-directories*<br />
       ├── 03<br />
